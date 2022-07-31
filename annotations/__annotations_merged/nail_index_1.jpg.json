@@ -1,0 +1,30 @@
+{
+    "nail_bottom": {
+        "coordinates": {
+            "x": 281,
+            "y": 411
+        },
+        "status": "ok"
+    },
+    "nail_left": {
+        "coordinates": {
+            "x": 243,
+            "y": 296
+        },
+        "status": "ok"
+    },
+    "nail_right": {
+        "coordinates": {
+            "x": 385,
+            "y": 336
+        },
+        "status": "ok"
+    },
+    "nail_top": {
+        "coordinates": {
+            "x": 321,
+            "y": 235
+        },
+        "status": "ok"
+    }
+}

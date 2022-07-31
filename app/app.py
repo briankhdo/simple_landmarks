@@ -3,6 +3,7 @@ from flask import Flask, render_template, send_from_directory, request, redirect
 from app.annotations import AnnotationManager
 from app.images import ImageManager
 from app.coordinates import parse_coordinates, init_scale_coordinates
+import os
 import config
 
 
@@ -106,6 +107,8 @@ def skip(image):
 # also serve the actual image files here, for simplicity
 @app.route("/images/<filename>")
 def serve_image(filename):
-    return send_from_directory(config.IMAGE_DIR, filename)
+    root_dir = os.path.dirname(os.getcwd())
+    print(os.path.join(root_dir, 'simple_landmarks', config.IMAGE_DIR))
+    return send_from_directory(os.path.join(root_dir, 'simple_landmarks', config.IMAGE_DIR), filename)
 
 
